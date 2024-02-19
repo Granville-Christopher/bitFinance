@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background-size: cover;
+  background-repeat: no-repeat;
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    /* rgb(var(--background-start-rgb)); */
+}
+.hero{
+  background: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.553)), url(/img/btc/pexels-alesia-kozik-6766410.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+.gold{
+  background-color: rgba(255, 215, 0, 0.5);
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+.gold1{
+  background-color: black;
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.653);
+}
+.shadow{
+  text-shadow: 0px 0px 20px  white;
+
+}
+.gold1:hover{
+  background-color: rgba(255, 215, 0, 0.5);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.379);
+}
+.gold:hover{
+  background-color: rgba(255, 217, 0, 0.721);
+}
+.hero-item{
+  margin-top: 100px;
+}
+.hero-item .text-center img{
+  width: 200px;
+  box-shadow: 0px 0px 200px 4px rgba(255, 217, 0, 0.721);
+}
+.moving-image2{
+  box-shadow: 0px 0px 200px 4px rgb(252, 252, 252);
+
+}
+.about-sec{
+  background: linear-gradient(rgba(0, 0, 0, 0.384), rgba(49, 42, 1)), url(/img/gold/pexels-michael-steinberg-342945.jpg);
+  background-position: center;
+}
+.assets{
+  background: linear-gradient(rgba(0, 0, 0, 0.384), rgb(0, 0, 0)), url(/img/gold/pexels-michael-steinberg-342945.jpg);
+  background-position: top;
+}
+.opera{
+  background:linear-gradient(rgba(0, 0, 0, 0.655), rgb(0, 0, 0)), url(/img/gold/pexels-michael-steinberg-342945.jpg) ;
+}
+.opera .im{
+  width: 200px;
+}
+
+#contact {
+  background: linear-gradient(rgb(var(--background-end-rgb)),rgb(var(--background-end-rgb)),rgba(49, 42, 1, 0.039), rgba(49, 42, 1, 0.263), rgba(49, 42, 1, 0.632), rgba(49, 42, 1, 0.811));
+  background-size: cover; /* Ensure the video covers the entire background */
+  background-position: center; /* Center the video */
+}
+.footer {
+  background: linear-gradient(  rgba(49, 42, 1, 0.811), rgb(49, 42, 1), rgb(var(--foreground-rgb)));
+}
+
+
+/* contact page */
+.contact{
+  background:linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.589)), url(/img/gold/pexels-zlaťákycz-8442322.jpg) ;
+  background-size: cover;
+}
+
+
+/* register page */
+.regis{
+  background: linear-gradient( rgb(var(--foreground-rgb)), rgba(49, 42, 1, 0.811));
+
+}
